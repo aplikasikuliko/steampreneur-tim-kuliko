@@ -88,8 +88,9 @@ function hitungDiskon(subtotal, member) {
 
 // PPN 11% dari dasar pengenaan pajak (subtotal setelah diskon).
 function hitungPPN(dasar) {
-  return Math.floor((dasar * 11) / 100);
+  return Math.round((dasar * 11) / 100);
 }
+
 
 function hitungRingkasan(keranjang, member) {
   const subtotal = hitungSubtotal(keranjang);
