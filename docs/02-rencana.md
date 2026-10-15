@@ -9,11 +9,11 @@ Tidak ada jadwal per jam, jadi rencana ini adalah jadwal tim kalian sendiri.
 
 | No | Langkah | Penanggung jawab | Cara memeriksa bahwa langkah ini selesai | Estimasi waktu | Waktu sebenarnya | Status |
 |---|---|---|---|---|---|---|
-| 1 | Periksa struktur proyek PHP dan berkas `kuliko.sql` | Belum ditentukan | Daftar halaman, dependensi, dan tabel database dicatat | 30 menit | Belum dicatat | Perlu dilakukan |
-| 2 | Siapkan lingkungan PHP dan MySQL/MariaDB | Belum ditentukan | Aplikasi dapat dibuka lokal tanpa error koneksi | 30–60 menit | Belum dicatat | Perlu diuji |
-| 3 | Periksa alur masuk, pendaftaran, dashboard, dan produk | Belum ditentukan | Alur diuji dengan data uji dan input tidak valid | 30–60 menit | Belum dicatat | Perlu diuji |
-| 4 | Verifikasi rumus HPP, analisis, dan laporan | Belum ditentukan | Hasil dibandingkan dengan perhitungan manual | 30–60 menit | Belum dicatat | Perlu diuji |
-| 5 | Lengkapi kasus uji, README, dan dokumentasi bukti | Belum ditentukan | Langkah setup dan hasil tes dapat diulang | 30–60 menit | Belum dicatat | Belum selesai |
-| | Bug Hunt | Tim | Catatan bug, perbaikan terpisah, dan test tersedia | 60 menit | Belum dicatat | Belum dicatat |
-| | Change request | Tim | Analisis di-commit sebelum kode; semua kasus uji lama dan baru lulus | Belum ditentukan | Belum dicatat | Belum dicatat |
-| | Dokumentasi dan refleksi | Semua anggota | Jawaban berdasarkan kerja nyata dan README dapat diikuti | 30–60 menit | Belum dicatat | Belum selesai |
+| 1 | Periksa struktur proyek PHP dan berkas `kuliko.sql` | Araya Ananta Syafikri | Daftar halaman, dependensi, dan tabel database dicatat | 30 menit | 10 menit | Sudah dilakukan |
+| 2 | Siapkan lingkungan PHP dan MySQL/MariaDB | Araya Ananta Syafikri | Aplikasi dapat dibuka lokal tanpa error koneksi | 30–60 menit | 15 menit | Sudah diuji |
+| 3 | Periksa alur masuk, pendaftaran, dashboard, dan produk | Ahmad Jaelani | Alur diuji dengan data uji dan input tidak valid | 30–60 menit | 20 menit | Sudah diuji |
+| 4 | Verifikasi rumus HPP, analisis, dan laporan | Ahmad Jaelani | Hasil dibandingkan dengan perhitungan manual | 30–60 menit | 20 menit | Sudah diuji |
+| 5 | Lengkapi kasus uji, README, dan dokumentasi bukti | Araya Ananta Syafikri | Langkah setup dan hasil tes dapat diulang | 30–60 menit | 15 menit | Sudah Selesai |
+| 6 | Bug Hunt | Tim | Catatan bug, perbaikan terpisah, dan test tersedia | 60 menit | Belum dicatat | Belum dicatat |
+| 7 | Change request | Tim | Analisis di-commit sebelum kode; semua kasus uji lama dan baru lulus | Belum ditentukan | Belum dicatat | Belum dicatat |
+| 8 | Dokumentasi dan refleksi | Semua anggota | Jawaban berdasarkan kerja nyata dan README dapat diikuti | 30–60 menit | Belum dicatat | Belum selesai |
