@@ -28,15 +28,35 @@ function tambahItem(keranjang, kode, qty) {
     throw new Error("Produk tidak ditemukan");
   }
 
+  // --- VALIDASI QTY DI SINI ---
+  if (
+    qty === null ||
+    qty === undefined ||
+    typeof qty === "boolean" ||
+    (typeof qty === "string" && qty.trim() === "")
+  ) {
+    throw new Error("Jumlah pesanan harus bilangan bulat dari 1 sampai 99");
+  }
+
+  const jumlah = Number(qty);
+  if (!Number.isInteger(jumlah) || jumlah < 1 || jumlah > 99) {
+    throw new Error("Jumlah pesanan harus bilangan bulat dari 1 sampai 99");
+  }
+  // -----------------------------
+
   const itemLama = keranjang.find((i) => i.kode === kode);
   if (itemLama) {
-    itemLama.qty += qty;
+    // Validasi batas total 99 per produk (Aturan 2)
+    if (itemLama.qty + jumlah > 99) {
+      throw new Error("Total jumlah per produk tidak boleh lebih dari 99");
+    }
+    itemLama.qty += jumlah; // Gunakan 'jumlah' (number), bukan 'qty' (string)
   } else {
     keranjang.push({
       kode: produk.kode,
       nama: produk.nama,
       harga: produk.harga,
-      qty: qty,
+      qty: jumlah, // Gunakan 'jumlah'
     });
   }
   return keranjang;
