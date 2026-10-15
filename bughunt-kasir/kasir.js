@@ -101,8 +101,18 @@ function hitungRingkasan(keranjang, member) {
 }
 
 function hitungKembalian(total, bayar) {
-  return bayar - total;
+  const jumlahBayar = typeof bayar === "string" && bayar.trim() === ""
+    ? NaN
+    : Number(bayar);
+  if (!Number.isFinite(jumlahBayar) || jumlahBayar < 0) {
+    throw new Error("Masukkan nominal pembayaran yang valid");
+  }
+  if (jumlahBayar < total) {
+    throw new Error("Uang pembayaran kurang");
+  }
+  return jumlahBayar - total;
 }
+
 
 // Agar bisa dipakai di Node.js untuk pengujian.
 if (typeof module !== "undefined") {
