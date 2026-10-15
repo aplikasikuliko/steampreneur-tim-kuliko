@@ -28,6 +28,8 @@ function tambahItem(keranjang, kode, qty) {
     throw new Error("Produk tidak ditemukan");
   }
 
+  const jumlah = Number(qty);
+
   // --- VALIDASI QTY DI SINI ---
   if (
     qty === null ||
@@ -47,7 +49,7 @@ function tambahItem(keranjang, kode, qty) {
   const itemLama = keranjang.find((i) => i.kode === kode);
   if (itemLama) {
     // Validasi batas total 99 per produk (Aturan 2)
-    if (itemLama.qty + jumlah > 99) {
+    if (itemLama.qty += jumlah > 99) {
       throw new Error("Total jumlah per produk tidak boleh lebih dari 99");
     }
     itemLama.qty += jumlah; // Gunakan 'jumlah' (number), bukan 'qty' (string)
