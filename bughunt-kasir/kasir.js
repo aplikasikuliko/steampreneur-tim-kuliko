@@ -77,7 +77,7 @@ function hitungSubtotal(keranjang) {
 // Diskon belanja dan diskon member.
 function hitungDiskon(subtotal, member) {
   let diskon = 0;
-  if (subtotal > 100000) {
+  if (subtotal >= 100000) { // mengubah subtotal > 100000 menjadi subtotal >= 100000
     diskon += (subtotal * 5) / 100;
   }
   if (member) {
